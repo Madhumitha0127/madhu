@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+      .hero-section{
+        background: linear-gradient(to right, #2c3e50, #3498db);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+    }
+      .course-card:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+      footer{
+        background-color:#f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand animate__animated animate__backInLeft" href="#">JSP Platform</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link animate__animated animate__pulse" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__pulse" href="#">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__pulse" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__pulse" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section animate__animated animate__rubberBand">
+        <h1>Welcome to JSP TEAM</h1>
+        <p>Learn from the best industry experts.Join today and enhance your skills!</p>
+        <a href="#" class="btn btn-primary btn-lg animate__animated animate__heartBeat">Get Started</a>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4 animate__animated animate__tada">Popular Courses</h2>
+        <div class="row g-4">
+            <!-- Course 1 -->
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm animate__animated animate__backInLeft">
+                    <img src="https://media.licdn.com/dms/image/v2/D5612AQHyLFkv9YBcGA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1715058774193?e=2147483647&v=beta&t=7yqv62DbvJWPvycGiDX4FGb79GOPsVB_dreB-SHh36E" class="card-img-top" alt="Web Development">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Learn to build responsive websites with Software Testing, Data Analysis.</p>
+                        <a href="web.html" class="btn btn-outline-primary">View Course</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm animate__animated animate__backInUp">
+                    <img src="https://osswalinfo.com/wp-content/uploads/2024/06/How-To-Take-Your-Data-Analytics-Approach-To-The-Next-Level-in-2023.jpg" class="card-img-top" alt="Data Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Analysis</h5>
+                        <p class="card-text">Master data analysis, visualization, and advanced learning techniques.</p>
+                        <a href="data analysis.html" class="btn btn-outline-primary">View Course</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm animate__animated animate__backInRight">
+                    <img src="https://i0.wp.com/magnitia.com/blog/wp-content/uploads/2023/04/Software-Tester.jpg?resize=1024%2C576&ssl=1" alt="Software Testing">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Testing</h5>
+                        <p class="card-text">Boost your career by mastering SDET.</p>
+                        <a href="softwaretesting.html" class="btn btn-outline-primary">View Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
